@@ -1,0 +1,186 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background-color: #5b272b;
+	text-align: center;
+	color: #bcbcbe;
+	font-family: "Arial";
+	
+}
+
+section {
+	max-width:20%;
+	padding:20px 1.5%;
+	border:4px solid #bcbcbe;
+	border-radius: 10px;
+	margin:0 1.5%;
+}
+
+#w {
+	float:left;
+}
+
+#b {
+	float:right;
+}
+
+h2.yourTurn {
+	border:4px solid #bcbcbe;
+	border-radius: 10px;
+}
+
+h2 {
+	font-size: 1.4em;
+	padding:8px 20px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+h3 {
+	padding-bottom: 16px;
+}
+
+section div {
+	background-color: #bcbcbe;
+	width:80%;
+	margin:16px auto 0;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: left;
+}
+
+section div img {
+	width:50px;
+}
+
+table {
+	margin:50px auto;
+	padding:10px;
+	border-collapse:separate;
+	border-spacing:0;
+	background-color: #bcbcbe;
+	width:60%;
+}
+
+tbody {
+	padding:5px;
+	background-color: #fff;
+}
+
+/*td {
+	width :calc((60%-10px)/8);
+	max-width:90px;
+	height:100%;
+}*/
+
+td, table td div {
+	background-size:100%;
+}
+
+td div	{
+	padding:50%;
+}
+
+
+td:hover {
+	opacity:.8;
+}
+
+td:hover div {
+	opacity:1;
+}
+
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+	background-image: url(../img/noire.jpg);
+}
+
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
+	background-image: url(../img/blanche.jpg);
+}
+
+.wk div {
+	background-image: url(../img/wk.png);
+}
+.wq div {
+	background-image: url(../img/wq.png);
+}
+.wr div {
+	background-image: url(../img/wr.png);
+}
+.wn div {
+	background-image: url(../img/wn.png);
+}
+.wb div {
+	background-image: url(../img/wb.png);
+}
+.wp div {
+	background-image: url(../img/wp.png);
+}
+.bk div {
+	background-image: url(../img/bk.png);
+}
+.bq div {
+	background-image: url(../img/bq.png);
+}
+.br div {
+	background-image: url(../img/br.png);
+}
+.bn div {
+	background-image: url(../img/bn.png);
+}
+.bb div {
+	background-image: url(../img/bb.png);
+}
+.bp div {
+	background-image: url(../img/bp.png);
+}
+
+.selectInit div {
+	background-color: rgba(0,0,255,.3);
+}
+
+.selectMove div,
+.selectCastle div {
+	background-color: rgba(0,255,0,.3);
+}
+
+.selectTarget div {
+	background-color: rgba(255,0,0,.3);
+}
+
+#displayMessage {
+	color:blue;
+	font-size: 5em;
+	font-weight: bold;
+	position: absolute;
+	text-align:center;
+	right: 0;
+	left:0;
+	top:50%;
+}
+
+pre {
+	display: block;
+	width:90px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	#w, #b {
+		width:45%;
+		max-width: unset;
+		margin:0 0 10px;
+	}
+
+	table {
+		border-collapse: collapse;
+		clear: both;
+		width:100%;
+	}
+}
